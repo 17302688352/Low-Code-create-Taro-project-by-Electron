@@ -112,7 +112,8 @@ function createMenu() {
   const menu = Menu.buildFromTemplate(template)
   Menu.setApplicationMenu(menu)
 }
-
+const remoteMain = require('@electron/remote/main')
+remoteMain.initialize()
 function createWindow() {
   // Create the browser window.
   win = new BrowserWindow({
@@ -122,11 +123,12 @@ function createWindow() {
     minHeight: 675,
     webPreferences: {
       nodeIntegration: true,
+      contextIsolation: false,
     },
     frame: false,
     show: false,
   })
-
+  remoteMain.enable(win.webContents)
   if (process.env.WEBPACK_DEV_SERVER_URL) {
     // Load the url of the dev server if in development mode
     win.loadURL(process.env.WEBPACK_DEV_SERVER_URL)

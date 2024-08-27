@@ -7,7 +7,7 @@ module.exports = {
         publish: ['github'],
         appId: 'taro.creator.app',
         productName: 'TaroCreator',
-        copyright: 'Copyright © 2020 深圳之了网络科技有限公司',
+        copyright: '鱼鱼',
         directories: {
           output: './dist' // 输出文件路径
         },

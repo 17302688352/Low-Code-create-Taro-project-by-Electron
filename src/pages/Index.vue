@@ -337,7 +337,7 @@ import _capitalize from 'lodash/capitalize'
 import QrcodeVue from 'qrcode.vue'
 import iPhoneXR from '@/components/iPhoneXR'
 import components from '@/components/components'
-const { clipboard, dialog } = require('electron').remote
+const { clipboard, dialog } = require('@electron/remote')
 const path = require('path')
 const AdmZip = require('adm-zip')
 const hljs = require('highlight.js')

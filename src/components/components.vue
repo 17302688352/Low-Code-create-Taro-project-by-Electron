@@ -105,7 +105,7 @@ pre {
 <script>
 import draggable from 'vuedraggable'
 const hljs = require('highlight.js')
-const { clipboard } = require('electron').remote
+const { clipboard } = require('@electron/remote')
 
 export default {
   components: {

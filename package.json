@@ -3,7 +3,7 @@
   "productName": "TaroCreator",
   "version": "0.2.1",
   "description": "微信小程序 小程序模板 小程序可视化设计工具 Taro Taro UI",
-  "author": "深圳之了网络科技有限公司",
+  "author": "鱼鱼",
   "private": true,
   "scripts": {
     "lint": "vue-cli-service lint",
@@ -15,6 +15,7 @@
   },
   "main": "background.js",
   "dependencies": {
+    "@electron/remote": "^2.1.2",
     "adm-zip": "^0.4.14",
     "core-js": "^3.6.4",
     "highlight.js": "^10.4.1",
